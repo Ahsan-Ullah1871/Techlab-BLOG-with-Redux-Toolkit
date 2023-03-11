@@ -12,11 +12,7 @@ const initialState = {
 export const fetchRelatedBlogs = createAsyncThunk(
 	"relatedBlogs/fetchRelatedBlogs",
 	async ({ tags, id }) => {
-		console.log("====================================");
-		console.log(tags, id);
-		console.log("====================================");
 		const blogs = await getRelatedBlogs({ tags, id });
-
 		return blogs;
 	}
 );
