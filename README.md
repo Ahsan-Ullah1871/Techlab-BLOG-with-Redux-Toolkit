@@ -48,4 +48,10 @@ explore related content based on tags.
      - Railway for backend
      - Vercel for frontend
 
+## Live Demo
+
+Explore the live demo of the project
+[here](https://book-store-app-brown.vercel.app/).
+
 ![Alt text](image-1.png)
+
