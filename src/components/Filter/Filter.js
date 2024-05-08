@@ -24,7 +24,7 @@ const Filter = () => {
 					<h4>Sort</h4>
 					<select
 						name="sort"
-						id="lws-sort"
+						id="techlab-sort"
 						class="w-full max-w-[150px] border-2 rounded-md text-gray-500"
 						onChange={(e) =>
 							handleSort(e.target.value)
@@ -69,7 +69,7 @@ const Filter = () => {
 							<input
 								type="radio"
 								name="filter"
-								id="lws-all"
+								id="techlab-all"
 								checked={
 									type == "All"
 										? true
@@ -82,7 +82,7 @@ const Filter = () => {
 									)
 								}
 							/>
-							<label for="lws-all">
+							<label for="techlab-all">
 								All
 							</label>
 						</div>
@@ -90,7 +90,7 @@ const Filter = () => {
 							<input
 								type="radio"
 								name="filter"
-								id="lws-saved"
+								id="techlab-saved"
 								class="radio"
 								checked={
 									type == "Saved"
@@ -103,7 +103,7 @@ const Filter = () => {
 									)
 								}
 							/>
-							<label for="lws-saved">
+							<label for="techlab-saved">
 								Saved
 							</label>
 						</div>

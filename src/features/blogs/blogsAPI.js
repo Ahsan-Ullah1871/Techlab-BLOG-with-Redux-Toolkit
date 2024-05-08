@@ -1,4 +1,4 @@
-import axiosIns from "../../utils/axios";
+import Api from "../../lib/Api";
 
 export const getBlogs = async ({ type, sort }) => {
 	let sorting_value =
@@ -9,10 +9,10 @@ export const getBlogs = async ({ type, sort }) => {
 		query_string += "isSaved=true";
 	}
 	if (sort !== "") {
-		query_string += `&_sort=${sorting_value}&_order=desc`;
+		query_string += `&sort=${sorting_value}&order=desc`;
 	}
 
-	const response = await axiosIns.get(`/blogs/?${query_string}`);
+	const response = await Api.get(`/blogs?${query_string}`);
 
-	return response.data;
+	return response;
 };

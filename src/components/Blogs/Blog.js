@@ -13,26 +13,31 @@ const Blog = ({ blog = {} }) => {
 		createdAt,
 	} = blog;
 	return (
-		<div class="lws-card">
+		<div class="techlab-card">
 			<Link to={`/blog/${id}`}>
 				<img
 					src={image}
-					class="lws-card-image"
+					class="techlab-card-image"
 					alt={title}
 				/>
 			</Link>
 			<div class="p-4">
-				<div class="lws-card-header">
-					<p class="lws-publishedDate">{createdAt}</p>
-					<p class="lws-likeCount">
+				<div class="techlab-card-header">
+					<p class="techlab-publishedDate">
+						{createdAt}
+					</p>
+					<p class="techlab-likeCount">
 						<i class="fa-regular fa-thumbs-up"></i>
 						{likes}
 					</p>
 				</div>
-				<Link to={`/blog/${id}`} class="lws-postTitle">
+				<Link
+					to={`/blog/${id}`}
+					class="techlab-postTitle"
+				>
 					{title}
 				</Link>
-				<div class="lws-tags">
+				<div class="techlab-tags">
 					{tags?.map((tag, index) => {
 						return (
 							<span>
@@ -46,7 +51,10 @@ const Blog = ({ blog = {} }) => {
 				</div>
 				{isSaved && (
 					<div class="flex gap-2 mt-4">
-						<span class="lws-badge"> Saved </span>
+						<span class="techlab-badge">
+							{" "}
+							Saved{" "}
+						</span>
 					</div>
 				)}
 			</div>

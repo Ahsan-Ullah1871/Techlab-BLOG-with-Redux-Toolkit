@@ -8,7 +8,7 @@ const Navbar = () => {
 				<div class="logo">
 					<Link to="/">
 						<img
-							src="/images/LWSBlog.svg"
+							src="/images/techlab.png"
 							alt="search"
 						/>
 					</Link>

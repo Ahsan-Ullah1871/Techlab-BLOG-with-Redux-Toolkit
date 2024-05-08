@@ -29,11 +29,19 @@ const Blogs = () => {
 		content = <div className="col-span-12">No blogs found</div>;
 
 	if (!isError && !loading && blogs?.length > 0) {
-		content = blogs.map((item) => <Blog key={item.id} blog={item} />);
+		content = blogs.map((item) => (
+			<Blog
+				key={item.id}
+				blog={item}
+			/>
+		));
 	}
 
 	return (
-		<main class="post-container" id="lws-postContainer">
+		<main
+			class="post-container"
+			id="techlab-postContainer"
+		>
 			{content}
 		</main>
 	);

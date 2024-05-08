@@ -30,7 +30,12 @@ const RelatedBlogs = ({ tags, currentBlogId }) => {
 
 	if (!isError && !loading && relatedBlogs?.length > 0) {
 		content = relatedBlogs.map((item) => {
-			return <BlogItem key={item.id} blog={item} />;
+			return (
+				<BlogItem
+					key={item.id}
+					blog={item}
+				/>
+			);
 		});
 	}
 
@@ -39,7 +44,7 @@ const RelatedBlogs = ({ tags, currentBlogId }) => {
 			<aside>
 				<h4
 					class="mb-4 text-xl font-medium"
-					id="lws-relatedPosts"
+					id="techlab-relatedPosts"
 				>
 					Related Posts
 				</h4>

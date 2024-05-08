@@ -1,13 +1,12 @@
-import axiosIns from "../../utils/axios";
+import Api from "../../lib/Api";
 
 export const getBlog = async (id) => {
-	const response = await axiosIns.get(`/blogs/${id}`);
-
-	return response.data;
+	const response = await Api.get(`/blogs/${id}`);
+	console.log(response);
+	return response;
 };
 
 export const patchBlog = async ({ id, data }) => {
-	const response = await axiosIns.patch(`/blogs/${id}`, data);
-
-	return response.data;
+	const response = await Api.patch(`/blogs/${id}`, data);
+	return response;
 };

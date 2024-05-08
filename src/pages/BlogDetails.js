@@ -47,7 +47,7 @@ const BlogDetails = () => {
 				<Link
 					to="/"
 					class="inline-block text-gray-600 home-btn"
-					id="lws-goHome"
+					id="techlab-goHome"
 				>
 					<i class="mr-2 fa-solid fa-house"></i>Go Home
 				</Link>

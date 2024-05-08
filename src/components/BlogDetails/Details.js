@@ -45,16 +45,19 @@ const Details = ({ blog = {} }) => {
 				src={image}
 				alt={title}
 				class="w-full rounded-md"
-				id="lws-megaThumb"
+				id="techlab-megaThumb"
 			/>
 			<div>
 				<h1
 					class="mt-6 text-2xl post-title"
-					id="lws-singleTitle"
+					id="techlab-singleTitle"
 				>
 					{title}
 				</h1>
-				<div class="tags" id="lws-singleTags">
+				<div
+					class="tags"
+					id="techlab-singleTags"
+				>
 					{tags?.map((tag, index) => {
 						return (
 							<span>
@@ -70,7 +73,7 @@ const Details = ({ blog = {} }) => {
 					{/* handle like on button click */}
 					<button
 						class="like-btn"
-						id="lws-singleLinks"
+						id="techlab-singleLinks"
 						onClick={handleLike}
 					>
 						<i class="fa-regular fa-thumbs-up"></i>{" "}
@@ -81,7 +84,7 @@ const Details = ({ blog = {} }) => {
 						class={`save-btn ${
 							isSaved && "active"
 						}`}
-						id="lws-singleSavedBtn"
+						id="techlab-singleSavedBtn"
 						onClick={handleSave}
 					>
 						<i class="fa-regular fa-bookmark"></i>{" "}

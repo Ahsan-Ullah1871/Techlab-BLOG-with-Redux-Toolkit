@@ -1,19 +1,51 @@
-Live URL : https://assignment-6-by-ahsan.netlify.app/
+![Alt text](image.png)
 
-এসাইনমেন্ট এ যা যা করতে হবেঃ
-✓ আমরা Fake JSON Server দিয়ে দিয়েছি এবং সেখানে বেশ কিছু ব্লগ থাকবে, সেগুলো আপনাকে fetch করে নিয়ে এসে হোম পেজে দেখাতে হবে।
+## Techlab | BLOG with Redux Toolkit
 
-✓ ব্লগ গুলো প্রথম অবস্থায় সারিবদ্ধ ভাবে দেখাবে অর্থাৎ API থেকে যেই সিরিয়ালে পাঠাবে সেই সিরিয়ালেই দেখাতে হবে। পরবর্তীতে Sort মেনু থেকে "Newest", "Most Liked" এ ক্লিক করলে পর্যায়ক্রমে নতুন গুলো এবং সব থেকে বেশি লাইক পাওয়া গুলো ফিল্টার দেখাবে।
+### Overview
 
-✓ লাইকে ক্লিক করলে লাইকের সংখ্যা বাড়বে, যেহেতু Authentication নেই, সেহেতু যত ইচ্ছা লাইক দেয়া যাবে এবং সেটি সার্ভারের সাথে Sync থাকবে।
+Techlab Blog is a web application built using React and Redux Toolkit for state
+management, hosted on Railway. It offers a collection of blog posts fetched from
+a JSON server. The backend is powered by PostgreSQL and Prisma for data
+management. Users can view blog posts, like them, save their favorite posts, and
+explore related content based on tags.
 
-✓ বাম পাশের মেনুতে "Saved" এ ক্লিক করলে, যে গুলো সেভ করা হয়েছে সেগুলোই দেখাবে।
+### Features
 
-✓ কার্ডের Title বা Thumbnail এ ক্লিক করলে, Details পেজে নিয়ে যাবে। এক্ষেত্রে অবশ্যই 'react-router-dom' প্যাকেজের মাধ্যমে রাউটিং ম্যানেজ করতে হবে। এসাইনমেন্ট Deploy করার পরে এটি নিশ্চিত হবেন, যেন সরাসরি ওই পেজে গেলেও, Blog Details দেখা যায়।
+- **Redux Toolkit**: Utilized for efficient state management, handling actions
+  like liking posts, saving posts, and managing related blog data.
+- **Blog Posts**: Displayed in a grid layout on the home page, showcasing title,
+  thumbnail, description, likes, and tags.
+- **Sorting**: Users can sort posts by "Newest" and "Most Liked" from the menu
+  to view relevant content.
+- **Likes**: Users can like blog posts, and the likes are synced with the
+  server.
+- **Saved Posts**: Users can view saved posts by clicking on the "Saved" menu
+  item.
+- **Blog Details**: Clicking on a blog post title or thumbnail navigates users
+  to the details page using 'react-router-dom'.
+- **Save/Unsave**: On the details page, users can save or unsave posts,
+  indicated by the "Saved" button with an active color when saved.
+- **Related Blogs**: The details page includes a section of related blogs based
+  on tags, excluding the current post.
+- **Database**: PostgreSQL database with Prisma used for efficient data
+  management.
 
-✓ Details পেজে "Save" বাটনে ক্লিক করলে, সেটি আলাদা ভাবে বুক মার্ক হবে, অর্থাৎ 'Save' লেখাটি 'Saved' হবে এবং নীল রং হবে (এটির জন্যে 'active' নামে একটি CSS ক্লাস বানিয়ে দেয়াই আছে)।
+### Technologies Used
 
-✓ Details পেজে, 'Related Blogs' সেকশনে ট্যাগ অনুযায়ী রিলেটেড ব্লগ গুলো দেখাবে।
+- **Frontend**:
 
-✓ যেই ব্লগ পোষ্ট এর ডিটেইল পেজে যাবো, সেই পোষ্ট যেন 'Related Blogs' এর লিস্ট এ না আসে।
+     - React
+     - Redux Toolkit
+     - React Router DOM
 
+- **Backend**:
+
+     - PostgreSQL
+     - Prisma
+
+- **Deployment**:
+     - Railway for backend
+     - Vercel for frontend
+
+![Alt text](image-1.png)

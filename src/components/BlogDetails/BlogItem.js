@@ -6,12 +6,16 @@ const BlogItem = ({ blog }) => {
 	return (
 		<div class="card">
 			<Link to={`/blog/${id}`}>
-				<img src={image} class="card-image" alt={title} />
+				<img
+					src={image}
+					class="card-image"
+					alt={title}
+				/>
 			</Link>
 			<div class="p-4">
 				<Link
 					to={`/blog/${id}`}
-					class="text-lg post-title lws-RelatedPostTitle"
+					class="text-lg post-title techlab-RelatedPostTitle"
 				>
 					{title}
 				</Link>
